@@ -1,0 +1,24 @@
+//HOME
+
+//------------ HELLO COMP ----- //
+.hello {
+
+    &__content {
+        font-size: 1.75em;
+        margin-top: 30px;
+        line-height: 1.75em;
+        text-align: left;
+    }
+}
+
+.singleService {
+    &__featuredImage {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__content {
+        width: 95%;
+        margin: 25px auto;
+    }
+}

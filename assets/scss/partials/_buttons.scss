@@ -1,0 +1,33 @@
+button,
+.button {
+  width: 250px;
+  padding: 12px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 600;
+  border: 1px solid transparent;
+
+  &--primary {
+    background-color: $secondary;
+    color: $white;
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+.example img {
+  width: 100%;
+  position: relative;
+}
+
+.example .overlay {
+  position: absolute;
+  top: 80px;
+  right: 15px;
+  font-weight: bold;
+  text-align: right;
+  font-size: 30px;
+}

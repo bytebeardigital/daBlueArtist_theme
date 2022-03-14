@@ -1,0 +1,46 @@
+.about {
+  &--content {
+    padding: 100px;
+
+    &--heading {
+      margin-bottom: 75px;
+      .bio {
+        line-height: 2.25em;
+        font-size: 1.15em;
+      }
+    }
+  }
+
+  //   &-image {
+  //     height: 400px;
+  //   }
+}
+
+.credit {
+  padding: 0px;
+  margin: 0 auto;
+  position: relative;
+  &-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .credit-link {
+    z-index: 10;
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+    &:hover {
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+  img {
+    width: 225px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
