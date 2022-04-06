@@ -1,5 +1,7 @@
 <?php
-
+$background_image = get_field('background_image', 'options');
+$hero_heading = get_field('hero_heading', 'options');
+$hero_subtext = get_field('hero_subtext', 'options');
 ?>
 <div
   class="site-header"
@@ -8,11 +10,11 @@
     background-size: cover;
     background-image:
     linear-gradient(to bottom, rgba(0,11,64, 0.75), rgba(0,11,64, 0.75)),
-    url('http://dablueartist.local/wp-content/uploads/2022/02/IMG_5431-min-scaled.jpg');">
+    url(<?php echo (empty($background_image)) ? 'nope' : $background_image ;?>);">
   <div class="site-inner">
     <div class="site-heading text-center">
-        <h1 class="mb-0 heading">DaBlueArtists</h1>
-        <p class=" site-leading">Let the music speak</p>
+        <h1 class="mb-3 heading"><?php echo (empty($hero_heading)) ? '' : $hero_heading ;?>s</h1>
+        <h3 class="site-leading"><?php echo (empty($hero_subtext)) ? '' : $hero_subtext ;?></h3>
     </div>
     <div class="navigation">
         <?php

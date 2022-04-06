@@ -8,6 +8,7 @@
  */
 
 
+ require_once 'functions/func-acf.php';
 require_once 'functions/func-admin.php';
 require_once 'functions/func-debug.php';
 require_once 'functions/func-cpt.php';

@@ -6,6 +6,11 @@
  * @version  1.0.0
  * @package  <Package>
  */
+
+$blurb = get_field('contact_blurb', 'options');
+$email = get_field('contact_email', 'options');
+$social_links = get_field('social_media_links', 'options');
+$contact_form = get_field('contact_form_shortcut', 'options');
 ?>
 
 </main>
@@ -14,28 +19,26 @@
         <div class="col-4">
             <h3 class="block-heading bold">Reach Out</h3>
             <p class="connect-summary">
-                Nicholar Clowney aka DaBlueArtists is a creative, music producer, and msucian based out fo Detroit, MI
+            <?php echo (empty($blurb)) ? '' : $blurb ;?>
             </p>
 
           <div class="footer-block">
                 <h4 class="block-heading bold">Email</h4>
-            <a href="mailto:hello@dablueartists.com" class="connect-email">hello@dablueartist.com</a>
+                <?php echo (!empty($email)) ? '<a href="mailto:'. $email .'" class="connect-email">'. $email .'</a>' : $email ;?>
+            
 
           </div>
            <div class="footer-block">
                 <h4 class="block-heading bold">Social Media </h4>
             <ul class="nav socialLinks">
- <li class="nav-item social-link">
-    <a class="link nav-link" href="#"> <?php echo render_svg('facebook');?></a>
+                <?php foreach ($social_links as $social_link):?>
+                    <li class="nav-item social-link">
+    <a class="link nav-link" href=" <?php echo (empty($social_link['link']['url'])) ? '' : $social_link['link']['url'] ;?>"> <?php echo render_svg($social_link['link']['title']);?></a>
   </li>
+                    <?php endforeach; ?>
 
-   <li class="nav-item social-link">
-    <a class="link nav-link" href="#"> <?php echo render_svg('instagram');?></a>
-  </li>
 
-   <li class="nav-item social-link">
-    <a class="link nav-link" href="#"> <?php echo render_svg('soundcloud');?></a>
-  </li>
+ 
 
 </ul>
            </div>
@@ -43,7 +46,7 @@
 
         <div class="col-8">
             <div class="content-inner">
-                contact form here
+            <?php echo (empty($contact_form)) ? '' : $contact_form ;?>
             </div>
         </div>
     </div>
