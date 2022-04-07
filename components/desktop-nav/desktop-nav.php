@@ -16,7 +16,7 @@ $hero_subtext = get_field('hero_subtext', 'options');
         <h1 class="mb-3 heading"><?php echo (empty($hero_heading)) ? '' : $hero_heading ;?>s</h1>
         <h3 class="site-leading"><?php echo (empty($hero_subtext)) ? '' : $hero_subtext ;?></h3>
     </div>
-    <div class="navigation">
+    <div class="navigation desktop-nav">
         <?php
             wp_nav_menu(array(
                 'theme_location' => 'primary',
