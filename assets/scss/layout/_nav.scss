@@ -40,6 +40,10 @@
   transition: background ease-in-out .75s;
   color: $white;
 
+  .button-tray {
+    margin-right: 20px;
+  }
+
   .mobileButton{
     width: fit-content;
     background-color: transparent;
