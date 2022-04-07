@@ -158,7 +158,6 @@ h5,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid red !important;
 }
 .custom-nav .nav-link {
   color: #ffffff;
