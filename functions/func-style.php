@@ -21,6 +21,6 @@ function gulp_wp_theme_styles() {
 	 */
 	$theme_handle_prefix = 'dablueartist';
 
-	wp_enqueue_style( $theme_handle_prefix . '-styles', get_template_directory_uri() . '/assets/css/' . $theme_handle_prefix .'.min.css', array(), '1.0.0', 'all' );
+	wp_enqueue_style( $theme_handle_prefix . '-styles', get_template_directory_uri() . '/assets/css/' . $theme_handle_prefix .'.css');
 }
 add_action( 'wp_enqueue_scripts', 'gulp_wp_theme_styles' );

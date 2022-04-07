@@ -16,10 +16,6 @@ function gulp_wp_theme_scripts() {
 	//FontAwesome
 	wp_enqueue_script('fontawesome', 'https://kit.fontawesome.com/db6a90ff89.js');
 
-
-	//Slick Carousel
-	wp_enqueue_script('slickjs', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js');
-
 	//IsotopeJS
 	wp_enqueue_script('isotopejs', 'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js');
 

@@ -8,7 +8,7 @@ const common = (($) => {
    */
   const someFunction = () => {
     // do something
-    console.log("test");
+    console.log("testing 1,2,3");
   };
 
   /**

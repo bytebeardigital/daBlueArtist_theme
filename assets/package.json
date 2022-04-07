@@ -1,35 +1,39 @@
 {
- "name": "package-name",
- "version": "1.0.0",
- "description": "package-description",
- "main": "index.js",
- "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1"
- },
- "author": "author-name",
- "license": "ISC",
- "devDependencies": {
-  "babel-core": "^6.26.3",
-  "babel-preset-env": "^1.7.0",
-  "babel-preset-es2015": "^6.24.1",
-  "bootstrap-scss": "^4.5.3",
-  "gulp": "^4.0.0",
-  "gulp-autoprefixer": "^6.0.0",
-  "gulp-babel": "^7.0.1",
-  "gulp-clean-css": "^4.0.0",
-  "gulp-concat": "^2.6.1",
-  "gulp-rename": "^1.4.0",
-  "gulp-sass": "^4.0.2",
-  "gulp-scss-lint": "^1.0.0",
-  "gulp-uglify": "^3.0.1",
-  "node-sass": "^4.13.1"
- },
- "dependencies": {
-  "babel-polyfill": "^6.26.0"
- },
- "browserslist": [
-  "> 1%",
-  "last 2 versions",
-  "dead"
- ]
+  "name": "dablueartist-theme",
+  "version": "1.0.0",
+  "description": "Custom Theme for Da Blue Artists",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bytebeardigital/daBlueArtist_theme.git"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "author": "bytebearbree",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bytebeardigital/daBlueArtist_theme/issues"
+  },
+  "homepage": "https://github.com/bytebeardigital/daBlueArtist_theme#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^0.9.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-postcss": "9.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "postcss-assets": "5.0.0"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2",
+    "bootstrap": "^5.1.3"
+  }
 }

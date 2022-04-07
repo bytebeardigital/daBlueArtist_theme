@@ -1,11 +1,13 @@
 // --------------------------------------------------
 // font size
-
 @function calculate-rem($size) {
-  $rem-size: $size / 16px;
+  $rem-size: calc($size / 16px);
   @return $rem-size * 1rem;
 }
 
+@mixin font-size($size) {
+  font-size: calculate-rem($size);
+}
 // --------------------------------------------------
 // heading styles
 
