@@ -2,7 +2,7 @@
 $credits = get_field('artists_credit', 'options');
 
 ?>
-<div class="credits container">
+<div class="credits container" id="credits">
    <h2 class="block-heading">Credits</h2>
    <div class="credits-slider-here">
         <div class="credits-slider--inner row">

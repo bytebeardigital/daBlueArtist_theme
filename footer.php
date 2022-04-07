@@ -44,7 +44,7 @@ $contact_form = get_field('contact_form_shortcut', 'options');
            </div>
 </div>
 
-        <div class="col-lg-8 col-12 contact-form">
+        <div class="col-lg-8 col-12 contact-form" id="contact">
             <div class="content-inner">
             <?php echo (empty($contact_form)) ? '' : $contact_form ;?>
             </div>

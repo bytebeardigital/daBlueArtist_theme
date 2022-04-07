@@ -1,7 +1,7 @@
 <?php
 ?>
 
-<div class="tracklist container">
+<div class="tracklist container" id="tracks">
     <div class="tracklist--inner row">
         <h2 class="block-heading">
             Tracklist

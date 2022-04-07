@@ -15,8 +15,18 @@
 
   &--toolkit {
     margin-top: 25px;
+    &-sources {
+      .tool {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
    @include mobile {
     &-sources {
+
       margin-top: 30px;
       .tool {
         margin-bottom: 20px;
