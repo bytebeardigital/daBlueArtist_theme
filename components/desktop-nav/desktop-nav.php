@@ -4,14 +4,9 @@ $hero_heading = get_field('hero_heading', 'options');
 $hero_subtext = get_field('hero_subtext', 'options');
 ?>
 <div
-  class="site-header"
-  style="
-    background-position: top center;
-    background-size: cover;
-    background-image:
-    linear-gradient(to bottom, rgba(0,11,64, 0.75), rgba(0,11,64, 0.75)),
-    url(<?php echo (empty($background_image)) ? 'nope' : $background_image ;?>);">
+  class="site-header">
   <div class="site-inner">
+    
     <div class="site-heading text-center">
         <h1 class="mb-3 heading"><?php echo (empty($hero_heading)) ? '' : $hero_heading ;?>s</h1>
         <h3 class="site-leading"><?php echo (empty($hero_subtext)) ? '' : $hero_subtext ;?></h3>

@@ -30,3 +30,28 @@
     }
   }
 }
+
+
+.mobile-nav{
+  position: fixed;
+  top:0;
+  width: 100vw;
+  transition: background ease-in-out .75s;
+  color: $white;
+
+  .navbar-toggler {
+    border: 2px solid blue;
+    right: 105px;
+    top: 10px;
+  }
+  .navbar-toggler-icon {
+    color: red;
+    background-color: red;
+  }
+}
+
+.scrolled {
+  .mobile-nav {
+    background-color: $primary;
+  }
+}

@@ -6832,6 +6832,15 @@ jQuery(document).ready(function($) {
   $(window).resize(function(){
     alterClass();
   });
+  
+
+  //Mobile Nav Background Scroll
+  var navScroll = () => {
+    $(window).on("scroll", function() {
+      $("body").toggleClass("scrolled", $(document).scrollTop() > 50);
+  })
+  }
   //Fire it when the page first loads:
   alterClass();
+  navScroll();
 });
