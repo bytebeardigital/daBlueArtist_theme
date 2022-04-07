@@ -16,7 +16,7 @@ $contact_form = get_field('contact_form_shortcut', 'options');
 </main>
 <footer class="footer container">
     <div class="footer-main row">
-        <div class="col-4">
+        <div class="col-lg-4 col-12">
             <h3 class="block-heading bold">Reach Out</h3>
             <p class="connect-summary">
             <?php echo (empty($blurb)) ? '' : $blurb ;?>
@@ -44,7 +44,7 @@ $contact_form = get_field('contact_form_shortcut', 'options');
            </div>
 </div>
 
-        <div class="col-8">
+        <div class="col-lg-8 col-12 contact-form">
             <div class="content-inner">
             <?php echo (empty($contact_form)) ? '' : $contact_form ;?>
             </div>

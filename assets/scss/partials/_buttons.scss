@@ -11,9 +11,13 @@ button,
   &--primary {
     background-color: $secondary;
     color: $white;
+    @include mobile {
+      width: 100%;
+    }
 
     a {
       color: $white;
+      text-decoration: none;
     }
   }
 }
@@ -31,3 +35,4 @@ button,
   text-align: right;
   font-size: 30px;
 }
+

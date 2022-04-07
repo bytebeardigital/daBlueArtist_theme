@@ -5,6 +5,9 @@
   align-items: center;
   height: 450px;
   padding: 0px;
+  @include mobile {
+    height: 300px;
+  }
 
   .sliderHeading {
     position: absolute;

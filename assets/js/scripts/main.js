@@ -17,10 +17,26 @@ jQuery(document).ready(function($) {
   //Mobile Nav Background Scroll
   var navScroll = () => {
     $(window).on("scroll", function() {
-      $("body").toggleClass("scrolled", $(document).scrollTop() > 50);
+      $("nav").toggleClass("scrolled", $(document).scrollTop() > 10);
   })
   }
+
+  //Mobile NavToggler
+  const toggleMobileNav = () => {
+
+    // $("#mobileNavButton").click(function(){
+    // $("#mobileNavButton").toggleClass("open");
+    // ("#mobileNavButton".hasClass("open")).alert('open');
+    // })
+
+    $("#mobileNavButton").click(() => {
+      $("#mobileMenu").toggleClass("closed-menu");
+  });
+  }
+
+ 
   //Fire it when the page first loads:
   alterClass();
   navScroll();
+  toggleMobileNav();
 });

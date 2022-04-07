@@ -32,7 +32,8 @@
   @include font-size(37.9px);
   letter-spacing: 2px;
   @include mobile {
-    @include font-size(21.33px);
+    @include font-size(38px);
+    margin-bottom: 10px;
   }
 }
 

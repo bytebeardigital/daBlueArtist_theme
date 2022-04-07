@@ -1,7 +1,21 @@
 //FOOTER
 .footer {
   background-color: $primary;
+  @include mobile {
+    padding: 25px;
+  }
 
+  .block-heading {
+    @include mobile {
+      margin-bottom: 12px;
+    }
+  }
+
+  .connect-summary {
+    @include mobile {
+      line-height: 1.75em;
+    }
+  }
   &-main {
     h3 {
       font-size: 2.75em;
@@ -11,6 +25,12 @@
   &-block {
     margin-top: 33px;
     margin-bottom: 33px;
+    a {
+      text-decoration: none;
+      @include mobile {
+        font-size: 1.2em;
+      }
+    }
   }
 }
 .socialLinks {
@@ -19,6 +39,17 @@
       color: $white;
       font-size: 1.2em;
       padding-bottom: 0px;
+    }
+  }
+}
+
+.contact-form {
+  @include mobile {
+    margin-top: 50px;
+
+    button {
+      text-align: center;
+      width: 100% !important;
     }
   }
 }

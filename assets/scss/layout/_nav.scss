@@ -34,24 +34,45 @@
 
 .mobile-nav{
   position: fixed;
-  top:0;
   width: 100vw;
+  padding: 10px;
+  background-color: transparent;
   transition: background ease-in-out .75s;
   color: $white;
 
-  .navbar-toggler {
-    border: 2px solid blue;
-    right: 105px;
-    top: 10px;
+  .mobileButton{
+    width: fit-content;
+    background-color: transparent;
+    svg {
+      fill: $white;
+    }
   }
+
   .navbar-toggler-icon {
-    color: red;
-    background-color: red;
+    svg {
+      fill: $white;
+    }
   }
+
+ .menu-tray {
+  background-color: rgba( $secondary, 0.75);
+  .mobile-nav-menu {
+    padding: 10px;
+    height: 40vh;
+    a {    color: $white;
+      font-size: 1.2em;
+      margin-bottom: .5em;}
+  }
+ }
+
 }
 
+.closed-menu {
+  display: none;
+  transition: ease-in-out 1s;
+}
+
+
 .scrolled {
-  .mobile-nav {
-    background-color: $primary;
-  }
+  background-color: rgba( $primary, 0.75);
 }

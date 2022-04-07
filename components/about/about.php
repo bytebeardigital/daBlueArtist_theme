@@ -22,7 +22,7 @@ $about_image = get_field('about_image', 'options');
                     <?php if(!empty($toolkit)):?>
                         <?php foreach ($toolkit as $toolkit):?>
                            
-                            <div class="col-6">
+                            <div class="col-6 tool">
                             <?php echo (!$toolkit['link']) ? '
                                 <p class="toolkit-source">' . $toolkit['tool'].'</p>' : '<a href="'. $toolkit['link'] .'" class="toolkit-source">' . $toolkit['tool'].'</a>';?>
                          </div>
